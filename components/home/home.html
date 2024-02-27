@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Farm Management</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/components/home/home.css" />
+    <link rel="stylesheet" href="/bootstrap-5.3.2-dist/css/bootstrap.css" />
+  </head>
+  <body>
+    <!-- SideBar -->
+    <div class="sidebar m-0 p-0">
+      <div class="d-flex justify-content-center align-items-center">
+        <img
+          src="/utility/image/logo.png"
+          class="mt-1 w-50"
+          alt="Logo"
+          
+        />
+      </div>
+
+      <h4 class="text-white text-center">Farm Management</h4>
+      <hr class="text-light border border-1" />
+      <ul>
+        <li class="sidebar-item active" onclick="getDashboard()">Dashboard</li>
+        <li class="sidebar-item dropdown">
+          System
+          <ul class="dropdown-menu">
+            <li class="sidebar-item " onclick="getUOM()">UOM</li>
+               
+        <li class="sidebar-item " onclick="getCategory()">
+          Category
+      </li>
+      <li class="sidebar-item " onclick="employee()">Employee</li>
+      <li class="sidebar-item " onclick="getCustomer()">Customers</li>
+      <li class="sidebar-item " onclick="getSuppliers()">
+        Suppliers
+    </li class="sidebar-item ">
+    <li class="sidebar-item " onclick="getOutsiders()">Outsiders</li>
+    <li class="sidebar-item " onclick="shedType()">Shed Type</li>
+    <li class="sidebar-item " onclick="shed()">Shed</li>
+          
+            <!-- Add more dropdown items here if needed -->
+          </ul>
+        </li>
+  
+
+       
+        <li class="sidebar-item " onclick="product()">Product</li>
+        <li class="sidebar-item " onclick="animal()">Animal</li>
+      
+        <li class="sidebar-item " onclick="vaccine()">Vaccination</li>
+        <li class="sidebar-item " onclick="purchase()">Purchase</li>
+        <li class="sidebar-item " onclick="sale()">Sale</li>
+        <li class="sidebar-item " onclick="milkCollection()">Milk Collection</li>
+        <li class="sidebar-item " onclick="grainFeed()">Grain feed Chart</li>
+
+        <li class="sidebar-item " onclick="feeding()">Feeding</li>
+
+        <li class="sidebar-item " onclick="medicalExb()">Medical Exibution</li>
+        <li class="sidebar-item " onclick="stock()">Stock</li>
+
+        <li class="sidebar-item " onclick="breading()">Breading</li>
+
+
+     
+        
+      </ul>
+
+      <!-- <hr class="text-light border border-1" /> -->
+    </div>
+
+    <!-- Topbar -->
+    <div class="topbar">
+      <button id="sidebarToggle" class="custom-btn rounded-end-circle"> <span class="side-angle"> > </span></button>
+      <div class="breadcrumbs fs-5 fw-bold" id="headerContent">Dashboard</div>
+      <div class="user-info">
+        <span class="me-3">Admin</span>
+        
+        <!-- Group image and dropdown trigger together -->
+        <div class="dropdown left-margin">
+          <!-- Image as part of the trigger -->
+          <img
+            src="/utility/image/profile.jpg"
+            alt="User Avatar"
+            width="40"
+            height="40"
+            class="dropdown-toggle"
+            id="dropdownMenuLink"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+            role="button"
+          />
+      
+          <!-- Dropdown Menu -->
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><a class="dropdown-item" href="#">Settings</a></li>
+            <li><a class="dropdown-item" id="logoutBtn" href="#">Logout</a></li>
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+
+    <!-- Main content -->
+    <div class="content" id="mainContent"> Welcome</div>
+
+    <script src="/bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+    <script src="/bootstrap-5.3.2-dist/js/bootstrap.js"></script>
+    
+    
+    <script src="/common.js"></script>
+    
+    <script src="/components/home/home.js"></script>
+
+    <script src="/components/UOM/uom.js"></script>
+    <script src="/components/outsiders/outsiders.js"></script>
+    <script src="/components/shed/shed.js"></script>
+    <script src="/components/category/category.js"></script>
+    <script src="/components/customers/customers.js"></script>
+    <script src="/components/suppliers/suppliers.js"></script>
+    <script src="/components/shedType/shedType.js"></script>
+    <script src="/components/employee/employee.js"></script>
+
+
+    <script src="/components/product/product.js"></script>
+    <script src="/components/Animal/animal.js"></script>
+    <script src="/components/vaccination/vaccination.js"></script>
+
+    <script src="/components/stock/stock.js"></script>
+
+    <script src="/components/breading/breading.js"></script>
+
+
+    
+
+    <!-- purchase -->
+    <script src="/components/purchase/purchase.js"></script>
+    <script src="/components/purchase/purchaseCreate.js"></script>
+    <script src="/components/purchase/purchaseDetail.js"></script>
+    <script src="/components/purchase/purchaseEdit.js"></script>
+
+
+    <!-- Sale -->
+    <script src="/components/sale/sale.js"></script>
+    <script src="/components/sale/saleCreate.js"></script>
+    <script src="/components/sale/saleDetail.js"></script>
+    <script src="/components/sale/saleEdit.js"></script>
+
+
+    <!-- grain feed -->
+    <script src="/components/grainFeed/grainFeed.js"></script>
+    <script src="/components/grainFeed/grainFeedCreate.js"></script>
+    <script src="/components/grainFeed/grainFeedDetail.js"></script>
+    <script src="/components/grainFeed/grainFeedEdit.js"></script>
+
+
+    <!-- Milk collection -->
+    <script src="/components/milkCollection/milkCollection.js"></script>
+    <script src="/components/milkCollection/milkCollectionCreate.js"></script>
+    <script src="/components/milkCollection/milkCollectionDetail.js"></script>
+    <script src="/components/milkCollection/milkCollectionEdit.js"></script>
+
+
+    <!-- Feeding -->
+    <script src="/components/feedings/feedings.js"></script>
+    <script src="/components/feedings/feedingsCreate.js"></script>
+    <script src="/components/feedings/feedingsDetail.js"></script>
+    <script src="/components/feedings/feedingsEdit.js"></script>
+
+    <!-- medical exhibution -->
+    <script src="/components/medicalExb/medicalExb.js"></script>
+    <script src="/components/medicalExb/medicalExbCreate.js"></script>
+    <script src="/components/medicalExb/medicalExbDetail.js"></script>
+    <script src="/components/medicalExb/medicalExbEdit.js"></script>
+
+
+  </body>
+</html>
